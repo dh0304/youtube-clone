@@ -1,7 +1,7 @@
 dependencies {
     implementation("org.springframework:spring-context")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    runtimeOnly("mysql:mysql-connector-java:${project.property('mysqlVersion')}")
+    runtimeOnly("com.mysql:mysql-connector-j")
 
     implementation("com.querydsl:querydsl-jpa:${project.property('querydslVersion')}:jakarta")
     annotationProcessor("com.querydsl:querydsl-apt:${project.property('querydslVersion')}:jakarta")
