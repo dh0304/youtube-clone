@@ -13,4 +13,9 @@ public class UserReader {
     public boolean existsBy(final String email) {
         return userRepository.existsByEmail(email);
     }
+
+    public User readBy(final String email) {
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 사용자입니다"));
+    }
 }
