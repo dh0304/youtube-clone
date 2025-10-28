@@ -13,6 +13,8 @@ tasks.named<Jar>("jar") {
 val restAssuredVersion: String by project
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.security:spring-security-crypto")
+    implementation("org.springframework:spring-tx")
 //    implementation("org.springframework.boot:spring-boot-starter-security")
 //    implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
 //    implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
